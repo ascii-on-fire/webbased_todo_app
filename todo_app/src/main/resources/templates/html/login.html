@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Login Todo App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <link rel="stylesheet" type="text/css" href="../../static/css/login_style.css" th:href="@{/css/login_style.css}">
+    <script type="text/javascript" src="../../static/js/login_logic.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div>
+                <p><h1>TODO APP</h1></p>
+                <label for="usernamelogin">Username</label><br>
+                <input type="text" id="usernamelogin" name="usernamelogin"><br>
+            </div>
+            <div>
+                <label for="passwordlogin">Password</label><br>
+                <input type="password" id="passwordlogin" name="passwordlogin">
+                <input type="checkbox" id="checkbox-password" name="checkbox-password" onclick="toggleBoxVisibility()">
+            </div>
+            <div class="registration-container">
+                <p>Not already signed up?</p>
+                <a href="/sign_up">Here for sign up</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
